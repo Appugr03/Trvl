@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.root {
+    --main-color: #8e44ad;
+    --black: #222;
+    --white: #222;
+    --light-black: #777;
+    --light-white: #fff9;
+    --dark-bg: rgba(0, 0, 0, .7);
+    --light-bg: #eee;
+    --border: 1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+section {
+    padding: 20px;            /* Padding inside the section */
+    margin: 20px 0;           /* Space between sections */
+    background-color: #f4f4f4; /* Light grey background */
+    border-radius: 8px;       /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+.heading{
+    text-align: center;          /* Center the text horizontally */
+    margin-bottom: 3rem;         /* Add space below the heading */
+    font-size: 5rem;             /* Set a large font size */
+    text-transform: uppercase;   /* Convert the text to uppercase */
+    color: var(--black);         /* Set the text color using the --black CSS variable */
+    font-weight: bold;           /* Make the text bold (optional) */
+    letter-spacing: 0.1rem;      /* Add spacing between the letters (optional) */
+}
+
+
+/* Specific section styles */
+.header-section {
+    background-color: #4CAF50; /* Green background */
+    color: white;              /* White text */
+    text-align: center;        /* Centered text */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between the logo and the nav links */
+    align-items: center; /* Vertically center items */
+    padding: 2rem 10%;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.navbar {
+    display: flex; /* Align nav links in a row */
+    gap: 2rem; /* Space between each link */
+}
+
+/* Base style for navbar links */
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: #000;           /* Initial color */
+    font-size: 1.6rem;     /* Font size */
+    padding: 5px 10px;     /* Padding for clickable area */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.navbar a:hover {
+    color: #ff6347;          /* Change text color on hover */
+    background-color: #f0f0f0; /* Optional: Add a background color on hover */
+    border-radius: 5px;      /* Optional: Round the corners */
+}
+
+/* Make the navbar items horizontal */
+.navbar ul {
+    list-style-type: none; /* Remove the bullets */
+    padding: 0;            /* Remove padding */
+    margin: 0;             /* Remove margin */
+    display: flex;         /* Display items in a row */
+    align-items: center;   /* Vertically align the items */
+}
+
+/* Style the individual list items */
+.navbar ul li {
+    margin-right: 20px;    /* Space between items */
+}
+
+/* Remove the right margin from the last item */
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+/* Style for the links */
+.navbar ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #000;           /* Link color */
+    font-size: 16px;       /* Font size */
+}
+
+/* Active link styling */
+.navbar ul li a.active {
+    font-weight: bold;     /* Highlight the active link */
+           /* Active link color */
+}
+#menu-btn{
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+    display: none;
+}
+
+/* General styles */
+.home{
+    padding: 0;
+}
+.home .slide{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 60rem;
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+}
+
+.content span {
+    display: block;
+    font-size: 2.2rem;
+    color: var(--light-white);
+    padding-bottom: 1rem;
+}
+
+.content h3 {
+    font-size: 6vh;
+    margin-bottom: 1.5rem;
+}
+
+.content .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.content .btn:hover {
+    background: #ff3b3b;
+}
+
+/* Swiper pagination and navigation */
+.swiper-pagination-bullet {
+    background: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+}
+
+
+.services{
+    background-color: var(--light-bg);
+}
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 2rem;
+}
+.service .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.service .box {
+    flex: 1 1 21%; /* Adjust the width of the boxes as needed */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.service .box:hover {
+    transform: translateY(-10px);
+}
+
+.service .box i {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service .box h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service .box p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+.home-about {
+    display: flex;               /* Makes the container a flexbox, aligning items horizontally by default. */
+    align-items: center;         /* Centers items vertically within the container. */
+    flex-wrap: wrap;
+    gap: 3rem;            /* Allows items to wrap to the next line if necessary (e.g., on smaller screens). */
+}
+
+.home-about .image {
+    flex: 1 1 41rem;             /* Sets the image container to be flexible with a base width of 41rem. */
+}
+
+.home-about .image img {
+    width: 100%;                 /* Ensures the image takes up 100% of the width of its container, maintaining responsiveness. */
+}
+
+.home-about .content {
+    flex: 1 1 41rem;             /* Sets the content container to be flexible with a base width of 41rem. */
+    padding: 3rem;               /* Adds padding around the content inside the container. */
+    background: var(--light-bg);
+    color: var(--black); /* Sets the background color of the content using a CSS variable. */
+}
+
+.home-about .content h3 {
+    font-size: 3rem;             /* Sets the font size of the heading to 3rem. */
+    color: var(--black);         /* Sets the color of the heading text using a CSS variable. */
+}
+
+.home-about .content p {
+    font-size: 1.5rem;           /* Sets the font size of the paragraph text to 1.5rem. */
+    padding: 1rem 0;             /* Adds padding above and below the paragraph text. */
+    line-height: 2;              /* Sets the line height of the paragraph text to improve readability. */
+    color: var(--light-black);         /* Sets the color of the paragraph text using a CSS variable. */
+}
+.home-about .icons-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-end;
+}
+.home-about .icons-container .icons{
+    background: var(--light-bg);
+    padding: 2rem;
+}
+
+
+
+
+:root {
+    --light-bg: #f9f9f9; /* Example color for light background */
+    --border: 1px solid #ddd; /* Example border color */
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Example box shadow */
+    --white: #fff; /* White color */
+    --black: #333; /* Dark text color */
+    --light-black: #777; /* Lighter shade for text */
+}
+
+/* General Section Styling */
+.home-packages {
+    background: var(--light-bg); /* Light background color for the packages section */
+    padding: 2rem; /* Padding around the entire section */
+}
+
+/* Grid Container for the Boxes */
+.home-packages .box-container {
+    display: grid; /* Using CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /* Responsive grid columns */
+    gap: 2rem; /* Gap between grid items */
+    padding-bottom: 2rem; /* Space below the boxes */
+}
+
+/* Styling for Each Box */
+.home-packages .box-container .box {
+    border: var(--border); /* Box border */
+    box-shadow: var(--box-shadow); /* Box shadow for depth */
+    background: var(--white); /* Box background color */
+    overflow: hidden; /* Ensures content stays within the box */
+    border-radius: 0.5rem; /* Slightly rounded corners */
+    transition: transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+/* Box Hover Effect */
+.home-packages .box-container .box:hover {
+    transform: translateY(-10px); /* Moves the box up slightly on hover */
+}
+
+/* Image Container */
+.home-packages .box-container .box .image {
+    height: 25rem; /* Fixed height for image container */
+    overflow: hidden; /* Ensures image doesn't overflow the container */
+}
+
+/* Image Styling */
+.home-packages .box-container .box .image img {
+    width: 100%; /* Full width image */
+    height: 100%; /* Full height image */
+    object-fit: cover; /* Ensures the image covers the entire container */
+    transition: transform 0.2s linear; /* Smooth transition for hover effect */
+}
+
+/* Image Hover Effect */
+.home-packages .box-container .box .image img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Content Area in Box */
+.home-packages .box-container .box .content {
+    padding: 2rem; /* Padding around content */
+    text-align: center; /* Center text alignment */
+}
+
+/* Headings in Box Content */
+.home-packages .box-container .box .content h3 {
+    font-size: 2.5rem; /* Font size for headings */
+    color: var(--black); /* Heading color */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+/* Paragraph Text in Box Content */
+.home-packages .box-container .box .content p {
+    font-size: 1.5rem; /* Font size for paragraphs */
+    color: var(--light-black); /* Text color for paragraphs */
+    line-height: 2; /* Line height for readability */
+    margin-bottom: 1.5rem; /* Space below paragraphs */
+}
+
+/* Button Styling */
+.home-packages .box-container .box .content .btn {
+    display: inline-block; /* Inline block for button */
+    padding: 0.8rem 1.5rem; /* Padding around button text */
+    font-size: 1.6rem; /* Font size for button */
+    color: var(--white); /* Button text color */
+    background-color: var(--black); /* Button background color */
+    border-radius: 0.5rem; /* Rounded corners for button */
+    transition: background-color 0.2s; /* Smooth transition for hover effect */
+    text-decoration: none; /* Remove underline from link */
+}
+
+/* Button Hover Effect */
+.home-packages .box-container .box .content .btn:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+/* Load More Button */
+.load-more {
+    text-align: center; /* Center the "Load More" button */
+    margin-top: 2rem; /* Space above the "Load More" button */
+}
+
+/* Styling for Load More Button */
+.load-more .btn {
+    background-color: var(--black); /* Button background color */
+    color: var(--white); /* Button text color */
+    padding: 1rem 2rem; /* Padding for button */
+    border-radius: 0.5rem; /* Rounded corners for button */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+/* Load More Button Hover Effect */
+.load-more .btn:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+.home-offer{
+    text-align: center;
+}
+.home-offer .content{
+    margin:0 auto;
+    max-width: 70rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+.home-offer .content h3{
+    font-size: 3rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+
+}
+.home-offer .content p{
+    font-size: 2rem;
+}
+.book-now .btn {
+    background-color: var(--black); /* Button background color */
+    color: var(--white); /* Button text color */
+    padding: 1rem 2rem; /* Padding for button */
+    border-radius: 0.5rem; /* Rounded corners for button */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+/* Load More Button Hover Effect */
+.book-now.btn:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+
+/* About Section Styling */
+/* About Section Styles */
+/* About Section Styles */
+.about {
+    display: flex; /* Use flexbox to arrange the content side by side */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    align-items: center; /* Align items vertically in the center */
+    background-color: var(--light-gray); /* Background color for the section */
+    padding: 4rem; /* Padding around the section */
+    gap: 2rem; /* Gap between the image and content */
+}
+
+.about .images {
+    flex: 1 1 45%; /* Allow the image to take 45% of the container's width */
+    text-align: center; /* Center the image */
+}
+
+.about .images img {
+    width: 100%; /* Make the image responsive */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    border-radius: 0.5rem; /* Slightly rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.about .content {
+    flex: 1 1 50%; /* Allow the content to take 50% of the container's width */
+    color: var(--black); /* Text color */
+}
+
+.about .content h3 {
+    font-size: 2.5rem; /* Size of the heading */
+    color: var(--black); /* Heading color */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.about .content p {
+    font-size: 1.6rem; /* Size of the paragraph text */
+    color: var(--dark-gray); /* Text color */
+    line-height: 1.8; /* Line height for readability */
+    margin-bottom: 1.5rem; /* Space below the paragraphs */
+}
+
+.about .icons-container {
+    display: flex; /* Display the icons in a row */
+    gap: 2rem; /* Gap between each icon */
+    margin-top: 2rem; /* Space above the icons container */
+}
+
+.about .icons {
+    display: flex; /* Flexbox to align icon and text */
+    align-items: center; /* Center the icon and text vertically */
+    background-color: var(--white); /* Background color for each icon container */
+    padding: 1rem 2rem; /* Padding around the icons and text */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--main-color); /* Icon color */
+}
+
+.about .icons:hover {
+    background-color: #87CEFA; /* Change background on hover */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.about .icons i {
+    font-size: 2rem; /* Icon size */
+    color: var(--main-color); /* Icon color */
+    margin-right: 1rem; /* Space between icon and text */
+}
+
+.about .icons span {
+    font-size: 1.6rem; /* Font size for the text next to the icon */
+    color: var(--light-black); /* Text color */
+    display: block; /* Ensure text displays on its own line */
+}
+
+/* Review Section Styles */
+.review {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Light gray background for the section */
+}
+
+.review-slider {
+    display: flex;
+    justify-content: center; /* Center the slider */
+    align-items: center;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review-slider .w {
+    display: flex;
+    gap: 20px; /* Gap between slides */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for slide movement */
+}
+
+.review-slider .slide {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    max-width: 300px; /* Max width for each slide */
+    text-align: center;
+    margin: 0 auto;
+    flex: 0 0 auto; /* Prevent slides from shrinking or growing */
+}
+
+.review-slider .slide .star {
+    color: #ffc107; /* Gold color for stars */
+    margin-bottom: 15px; /* Space below stars */
+}
+
+.review-slider .slide .star i {
+    margin: 0 2px; /* Space between stars */
+}
+
+.review-slider .slide p {
+    font-size: 16px;
+    color: #555; /* Dark gray text color */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 15px; /* Space below the paragraph */
+}
+
+.review-slider .slide h3 {
+    font-size: 18px;
+    color: #333; /* Dark text color */
+    margin-bottom: 5px; /* Space below the heading */
+    font-weight: bold; /* Bold text */
+}
+
+.review-slider .slide span {
+    font-size: 14px;
+    color: #777; /* Lighter gray text color */
+}
+
+.review-slider .slide img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Circular profile image */
+    margin-top: 10px;
+    object-fit: cover; /* Ensure image covers the area */
+}
+
+/* Package Section Styles */
+.package {
+    padding: 50px 20px; /* Padding around the section */
+    background-color: #f5f5f5; /* Light gray background for the section */
+}
+
+.package .heading-title {
+    text-align: center; /* Center the heading */
+    font-size: 2.5rem; /* Font size for the heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 30px; /* Space below the heading */
+    font-weight: bold; /* Bold text */
+}
+
+.package .box-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    gap: 20px; /* Gap between boxes */
+    justify-content: center; /* Center the boxes */
+}
+
+.package .box {
+    background: #fff; /* White background for each box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    overflow: hidden; /* Hide overflow content */
+    width: calc(33.333% - 20px); /* 3 boxes per row with gap adjustment */
+    margin-bottom: 20px; /* Space below each box */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.package .box:hover {
+    transform: translateY(-10px); /* Slightly lift the box on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.package .images img {
+    width: 100%; /* Make the image responsive */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    border-bottom: 2px solid #ddd; /* Divider below the image */
+}
+
+.package .content {
+    padding: 20px; /* Padding inside the content area */
+    text-align: center; /* Center-align the text */
+}
+
+.package .content h3 {
+    font-size: 1.5rem; /* Font size for the heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 15px; /* Space below the heading */
+    font-weight: bold; /* Bold text */
+}
+
+.package .content p {
+    font-size: 1rem; /* Font size for the paragraph text */
+    color: #555; /* Dark gray text color */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.package .btn {
+    display: inline-block; /* Inline-block button */
+    padding: 10px 20px; /* Padding around the button text */
+    font-size: 1rem; /* Font size for the button text */
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Blue background color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.package .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Booking Section Styles */
+.booking {
+    padding: 50px 20px; /* Padding around the section */
+    background-color: #f5f5f5; /* Light gray background for the section */
+}
+
+.booking .heading-title {
+    text-align: center; /* Center the heading */
+    font-size: 2.5rem; /* Font size for the heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 30px; /* Space below the heading */
+    font-weight: bold; /* Bold text */
+}
+
+.booking .book-form {
+    max-width: 800px; /* Maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background: #fff; /* White background for the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.booking .flex {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 20px; /* Gap between input boxes */
+}
+
+.booking .inputBox {
+    flex: 1 1 45%; /* Flex property for responsive layout */
+    display: flex; /* Use flexbox to align label and input */
+    flex-direction: column; /* Arrange label and input vertically */
+}
+
+.booking .inputBox span {
+    font-size: 1rem; /* Font size for labels */
+    color: #333; /* Dark text color */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+.booking .inputBox input {
+    padding: 10px; /* Padding inside the input fields */
+    font-size: 1rem; /* Font size for input text */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background: #fff; /* White background for input fields */
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.booking .inputBox input::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+.booking .btn {
+    display: block; /* Block display for the button */
+    width: 100%; /* Full width button */
+    padding: 15px; /* Padding inside the button */
+    font-size: 1rem; /* Font size for the button text */
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Blue background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-top: 20px; /* Space above the button */
+}
+
+.booking .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background: url('images/footer-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    padding: 20px;
+    color: var(--black);
+    transition: background-attachment 0.5s; /* Smooth transition */
+}
+
+.footer:hover {
+    background-attachment: fixed; /* Background image stays fixed on hover */
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.footer .box h3 {
+    color: var(--black); /* Ensure text color is visible */
+    font-size: 1.8rem;   /* Make sure the font size is readable */
+    margin-bottom: 1rem; /* Add space below the heading */
+    font-weight: bold;   /* Make headings stand out */
+}
+
+.footer .box a {
+    display: block;
+    color: var(--black);
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.footer .box a i {
+    margin-right: 0.5rem;
+    color: var(--black);
+}
+
+.footer .box a:hover {
+    color: var(--black);
+}
+.footer-line {
+    border: 0;
+    border-top: .1rem solid var(--black);
+    margin: 2rem 0; /* Adjust the margin as needed */
+    width: 100%;
+}
+
+.footer .credit {
+    text-align: center;
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quaries */
+
+/* For screens up to 1200px */
+@media (max-width: 1200px) {
+    section {
+        padding: 3rem 5%;
+    }
+}
+
+/* For screens up to 991px */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    section {
+        padding: 3rem 2rem;
+    }
+}
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+        transition: .2s linear;
+    }
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: 2px solid #ddd; /* Example border */
+        padding: 2rem;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 2rem 0;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+/* For screens up to 450px */
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .heading-tittle {
+        font-size: 3.5rem;
+    }
+}
