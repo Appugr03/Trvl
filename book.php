@@ -14,13 +14,13 @@
 <body>
     <!-- Header section start -->
     <section class="header">
-        <a href="home.html" class="logo">Travel</a>
+        <a href="index.php" class="logo">Travel</a>
         <nav class="navbar">
             <ul>
-                <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="package.html">Package</a></li>
-                <li><a href="book.html">Book</a></li>
+                <li><a href="index.php" class="active">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="package.php">Package</a></li>
+                <li><a href="book.php">Book</a></li>
             </ul>
         </nav>
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -30,81 +30,64 @@
     <!-- Heading section start -->
     <div class="heading" style="background:url('./images/header-bg-3.jpg') no-repeat center center; background-size: cover; height: 300px;">
     <h1>Book</h1>
-</div>
+    </div>
 
-    <!-- Heading section end -->
+    <!-- Booking section starts -->
+    <section class="booking">
+        <h1 class="heading-title">Booking your Trip</h1>
+        <form action="book_form.php" method="post" class="book-form">
+            <div class="flex">
+                <div class="inputBox">
+                    <span>name:</span>
+                    <input type="text" placeholder="Enter your name" name="name" required>
+                </div>
 
-<!-- booking section starts -->
-<section class="booking">
-    <h1 class="heading-title">Booking your Trip</h1>
-    <form action="book_form.html" method="post" class="book-form">
-        <div class="flex">
-            <div class="inputBox">
-                <span>name:</span>
-                <input type="text" placeholder="Enter your name" name="name">
+                <div class="inputBox">
+                    <span>email:</span>
+                    <input type="email" placeholder="Enter your email" name="email" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>phone:</span>
+                    <input type="number" placeholder="Enter your phone number" name="phone" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>address:</span>
+                    <input type="text" placeholder="Enter your address" name="address" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>where to:</span>
+                    <input type="text" placeholder="Place you want to visit" name="location" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>how many:</span>
+                    <input type="number" placeholder="How many people" name="guest" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>arrival:</span>
+                    <input type="date" name="arrivals" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>leaving:</span>
+                    <input type="date" name="leaving" required>
+                </div>
             </div>
-
-            <div class="inputBox">
-                <span>email:</span>
-                <input type="email" placeholder="Enter your email" name="email">
-            </div>
-
-            <div class="inputBox">
-                <span>phone:</span>
-                <input type="number" placeholder="Enter your phone number" name="phone">
-            </div>
-
-            <div class="inputBox">
-                <span>address:</span>
-                <input type="text" placeholder="Enter your address" name="address">
-            </div>
-
-            <div class="inputBox">
-                <span>where to:</span>
-                <input type="text" placeholder="place you want to visit" name="location">
-            </div>
-
-            <div class="inputBox">
-                <span>how many:</span>
-                <input type="number" placeholder="how many people" name="members">
-            </div>
-
-            <div class="inputBox">
-                <span>arrival:</span>
-                <input type="date"  name="arrival">
-            </div>
-
-
-            
-            <div class="inputBox">
-                <span>leaving:</span>
-                <input type="date"  name="leaving">
-            </div>
-        </div>
-        <input type="submit" value="submit" class="btn" name="send">
-    </form>
-</section>
-<!-- booking section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <input type="submit" value="Submit" class="btn" name="send">
+        </form>
+    </section>
+    <!-- Booking section ends -->
 
     <!-- Footer section start -->
     <section class="footer">
         <div class="box-container">
             <div class="box">
                 <h3>Quick links</h3>
-                <a href="home.php"><i class="fas fa-angle-right"></i> Home</a>
+                <a href="index.php"><i class="fas fa-angle-right"></i> Home</a>
                 <a href="about.php"><i class="fas fa-angle-right"></i> About</a>
                 <a href="package.php"><i class="fas fa-angle-right"></i> Package</a>
                 <a href="book.php"><i class="fas fa-angle-right"></i> Book</a>
@@ -115,7 +98,7 @@
                 <a href="#"><i class="fas fa-angle-right"></i> Ask Question</a>
                 <a href="#"><i class="fas fa-angle-right"></i> About Us</a>
                 <a href="#"><i class="fas fa-angle-right"></i> Privacy Policy</a>
-                <a href="#"><i class="fas fa-angle-right"></i> Term of Use</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Terms of Use</a>
             </div>
 
             <div class="box">

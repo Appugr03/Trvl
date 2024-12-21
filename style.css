@@ -58,12 +58,19 @@ section {
     font-weight: bold;           /* Make the text bold (optional) */
     letter-spacing: 0.1rem;      /* Add spacing between the letters (optional) */
 }
-
+.header {
+    background: linear-gradient(90deg, #ffd1dc, #a64d79); /* Blue gradient */
+    color: white; /* Ensures text stands out on the background */
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* Specific section styles */
 .header-section {
     background-color: #4CAF50; /* Green background */
-    color: white;              /* White text */
+    color:white;              /* White text */
     text-align: center;        /* Centered text */
 }
 
@@ -198,19 +205,20 @@ section {
 }
 
 
-.services{
-    background-color: var(--light-bg);
+.services {
+    background-color: #ffe6eb; /* Light pink background */
 }
-.services .box-container{
+
+.services .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
 }
+
 .service .box-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 }
 
 .service .box {
@@ -219,7 +227,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    background: #fff;
+    background: #a64d79; /* Keep the boxes white for contrast */
     border-radius: 10px;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -227,23 +235,24 @@ section {
 
 .service .box:hover {
     transform: translateY(-10px);
+    
 }
 
 .service .box i {
     font-size: 40px;
-    color: #333;
+    color: black; /* Bright pink icon color */
     margin-bottom: 10px;
 }
 
 .service .box h3 {
     font-size: 24px;
-    color: #333;
+    color: black; /* Bright pink for titles */
     margin-bottom: 10px;
 }
 
 .service .box p {
     font-size: 16px;
-    color: #666;
+    color: black; /* Softer pink for text */
 }
 
 

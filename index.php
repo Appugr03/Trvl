@@ -14,13 +14,13 @@
 <body>
     <!-- Header section start -->
     <section class="header">
-        <a href="home.html" class="logo">Travel</a>
+        <a href="index.php" class="logo">Travel Tales</a>
         <nav class="navbar">
             <ul>
-                <li><a href="home.html" class="active">home</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="package.html">package</a></li>
-                <li><a href="book.html">book</a></li>
+                <li><a href="index.php" class="active">home</a></li>
+                <li><a href="about.php">about</a></li>
+                <li><a href="package.php">package</a></li>
+                <li><a href="book.php">book</a></li>
             </ul>
         </nav>
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -37,7 +37,7 @@
                 <div class="content">
                     <span>explore,discover,Travel</span>
                     <h3>Travel arround the world</h3>
-                    <a href="package.html" class="btn" >Discover More</a>
+                    <a href="package.php" class="btn" >Discover More</a>
                 </div>
             </div>
 
@@ -45,7 +45,7 @@
                 <div class="content">
                     <span>explore,discover,Travel</span>
                     <h3>Discover the new places</h3>
-                    <a href="package.html" class="btn" >Discover More</a>
+                    <a href="package.php" class="btn" >Discover More</a>
                 </div>
             </div>
 
@@ -53,7 +53,7 @@
                 <div class="content">
                     <span>explore,discover,Travel</span>
                     <h3>make your tour worthwhile</h3>
-                    <a href="package.html" class="btn" >Discover More</a>
+                    <a href="package.php" class="btn" >Discover More</a>
                 </div>
             </div>
         </div>
@@ -112,7 +112,7 @@
         we believe that travel is more than just visiting new places—it's about creating lasting memories, experiencing different cultures, and discovering the world in ways that resonate with your spirit. Our passion for travel drives us to curate the best experiences for adventurers, explorers, and dreamers alike.
 
         </p>
-        <a href="about.html" class="btn">Read more</a>
+        <a href="about.php" class="btn">Read more</a>
     </div>
 
 </section>
@@ -134,7 +134,7 @@
                 <h3>Adventure & Tour</h3>
                 <p>The Taj Mahal is a breathtaking white marble mausoleum in Agra, India, symbolizing eternal love and architectural brilliance.
                 </p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -145,7 +145,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>Waterfalls are mesmerizing natural wonders where water cascades over cliffs, creating stunning visual and auditory experiences. Their powerful descent and serene surroundings offer a breathtaking escape into nature's beauty.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -156,7 +156,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>Deserts are vast, arid landscapes characterized by their extreme dryness and sparse vegetation. Their unique, sun-scorched beauty features sweeping sand dunes, rugged terrain, and a stark, serene environment.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -177,7 +177,7 @@
 "Hurry, book now and save big!"
 
             </p>
-        <div class="book-now"><a href="book.html" class="btn">Book now</a></div>
+        <div class="book-now"><a href="book.php" class="btn">Book now</a></div>
         </div>
     </section>
 <!-- home offer section sends -->
@@ -204,10 +204,10 @@
     <div class="box-container">
         <div class="box">
             <h3>Quick links</h3>
-            <a href="home.html"><i class="fas fa-angle-right"></i> home</a>
-            <a href="about.html"><i class="fas fa-angle-right"></i> about</a>
-            <a href="package.html"><i class="fas fa-angle-right"></i> package</a>
-            <a href="book.html"><i class="fas fa-angle-right"></i> book</a>
+            <a href="index.php"><i class="fas fa-angle-right"></i> home</a>
+            <a href="about.php"><i class="fas fa-angle-right"></i> about</a>
+            <a href="package.php"><i class="fas fa-angle-right"></i> package</a>
+            <a href="book.php"><i class="fas fa-angle-right"></i> book</a>
         </div>
 
         <div class="box">

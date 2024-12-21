@@ -14,13 +14,13 @@
 <body>
     <!-- Header section start -->
     <section class="header">
-        <a href="home.html" class="logo">Travel</a>
+        <a href="index.php" class="logo">Travel</a>
         <nav class="navbar">
             <ul>
-                <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="package.html">Package</a></li>
-                <li><a href="book.html">Book</a></li>
+                <li><a href="index.php" class="active">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="package.php">Package</a></li>
+                <li><a href="book.php">Book</a></li>
             </ul>
         </nav>
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -111,7 +111,7 @@
                     <i class="fas fa-star"></i>
                 </div>
                 <p> Overtourism is straining popular destinations, leading to environmental and infrastructural challenges. Meanwhile, the rise of digital nomadism is reshaping travel trends, with countries offering special visas to attract remote workers.</p>
-                <h3>Harsha</h3>
+                <h3>Samarth G</h3>
                 <span>Traveller</span>
                     <img src="./images/pic3.avif" alt="">
             </div>
@@ -130,10 +130,10 @@
         <div class="box-container">
             <div class="box">
                 <h3>Quick links</h3>
-                <a href="home.html"><i class="fas fa-angle-right"></i> Home</a>
-                <a href="about.html"><i class="fas fa-angle-right"></i> About</a>
-                <a href="package.html"><i class="fas fa-angle-right"></i> Package</a>
-                <a href="book.html"><i class="fas fa-angle-right"></i> Book</a>
+                <a href="index.php"><i class="fas fa-angle-right"></i> Home</a>
+                <a href="about.php"><i class="fas fa-angle-right"></i> About</a>
+                <a href="package.php"><i class="fas fa-angle-right"></i> Package</a>
+                <a href="book.php"><i class="fas fa-angle-right"></i> Book</a>
             </div>
 
             <div class="box">

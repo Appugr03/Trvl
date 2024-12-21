@@ -14,13 +14,13 @@
 <body>
     <!-- Header section start -->
     <section class="header">
-        <a href="home.html" class="logo">Travel</a>
+        <a href="home.php" class="logo">Travel</a>
         <nav class="navbar">
             <ul>
-                <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="package.html">Package</a></li>
-                <li><a href="book.html">Book</a></li>
+                <li><a href="home.php" class="active">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="package.php">Package</a></li>
+                <li><a href="book.php">Book</a></li>
             </ul>
         </nav>
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -48,7 +48,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>Manasa Sarovar is a serene and sacred freshwater lake located in the Tibetan Plateau, revered in Hinduism, Buddhism, and Jainism. Surrounded by the majestic Himalayas, it is considered a place of pilgrimage and spiritual cleansing.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -59,7 +59,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>A safari offers an exhilarating experience of wildlife observation in their natural habitats, typically in Africa’s vast savannas and reserves. It combines adventure with opportunities to witness diverse animal species and stunning landscapes.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -70,7 +70,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>India Gate is a prominent war memorial located in New Delhi, India, dedicated to the soldiers who died in World War I. The monument features an imposing archway and serves as a symbol of national pride and remembrance.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -81,7 +81,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>Shringeri Temple, located in Karnataka, India, is a revered Hindu shrine dedicated to Goddess Saraswati, known for its ancient architecture and spiritual significance. It is part of the Shringeri Sharada Peetham, one of the four cardinal peethams established by Adi Shankaracharya.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -92,7 +92,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>Goa's beaches are renowned for their picturesque beauty, golden sands, and vibrant nightlife, attracting tourists from around the world. Each beach offers a unique atmosphere, from lively party spots to tranquil retreats.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -103,7 +103,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>Ladakh, a high-altitude region in northern India, is celebrated for its stunning landscapes, including barren mountains, crystal-clear lakes, and ancient monasteries. Its unique culture and remote beauty make it a sought-after destination for adventure and spiritual travelers.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -114,7 +114,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>Rajasthan's palaces, such as the City Palace in Udaipur and the Amber Fort near Jaipur, showcase opulent architecture and rich history. These majestic structures reflect the grandeur of Rajasthan's royal heritage and attract visitors with their intricate designs and cultural significance.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -125,7 +125,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>Assam tea estates are renowned for producing some of the world’s finest teas, characterized by their rich, robust flavors. Nestled in the lush, green hills of northeastern India, these estates offer picturesque landscapes and a glimpse into the traditional tea-making process.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -136,7 +136,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>The Kashmir River, also known as the Jhelum River, flows through the picturesque Kashmir Valley, offering stunning natural beauty and vital water resources. Its serene waters and surrounding landscapes are integral to the region's charm and agriculture.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -147,7 +147,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>The Golden Temple in Amritsar, India, is a sacred Sikh shrine renowned for its stunning golden facade and tranquil surrounding water. It serves as a central spiritual and cultural hub, attracting millions of devotees and tourists annually.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
         <div class="box">
@@ -157,7 +157,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>The Golden Temple in Amritsar, India, is a sacred Sikh shrine renowned for its stunning golden facade and tranquil surrounding water. It serves as a central spiritual and cultural hub, attracting millions of devotees and tourists annually.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -168,7 +168,7 @@
             <div class="content">
                 <h3>Adventure & Tour</h3>
                 <p>The Golden Temple in Amritsar, India, is a sacred Sikh shrine renowned for its stunning golden facade and tranquil surrounding water. It serves as a central spiritual and cultural hub, attracting millions of devotees and tourists annually.</p>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.php" class="btn">book now</a>
             </div>
         </div>
     </div>
